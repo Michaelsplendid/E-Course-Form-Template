@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 <style>
+  body{
+    align-items: center;
+    align-content: center;
+  }
 .topic-1{         
         text-align: center;
-        font-size: large;
+        font-size: x-large;
         font-weight: bolder;
         margin-top: 0px;
         margin-bottom: 1rem;
-        color: #FFFFFF;
-        background-color: #111E59;
-        width: 100%;
+        color: #111E59;
+        position: relative;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: -30%;
-        padding-right: -30px;
         border-radius: 20px;
 }
-
 table{ 
   color: black;  
   font-style: normal;
@@ -75,7 +75,7 @@ frmvalidator.addValidation("message","req",
 <body>
      <!-- Our-Courses -->
 		<section id="our-courses">
-    <div class="topic-1"><b>COURSE REGISTRATION FORM</b></div>
+    <div class="topic-1"><img src="https://imgur.com/GNKG9oP.png" width="100px" alt="Enermics-Logo" style="border-radius: 50%;"<b>COURSE REGISTRATION FORM</b></div>
 <!-- CONTAINER -->
  <br>
   <form method="POST" action="https://formsubmit.co/d9473a8489ae86e40bacbb5c390f0108" onsubmit="myFunction()">
@@ -85,7 +85,7 @@ frmvalidator.addValidation("message","req",
     <!-- Disable Captcha -->
     <input type="hidden" name="_captcha" value="false">
 
-    <input type="hidden" name="_next" value="https://www.enermicsconsulting.com">
+    <input type="hidden" name="_next" value="https://enermicsconsulting.com/our-courses">
 
 <table align="center" cellpadding = "10">
  
@@ -105,10 +105,10 @@ frmvalidator.addValidation("message","req",
  
 <!----- Date Of Birth -------------------------------------------------------->
 <tr>
-<td><label for="dateOfBirth" class="form-label">DATE OF BIRTH</label><br>
+<td><label for="dateOfBirth" class="form-label" name="Date&nbsp;Of&nbsp;Birth" required>DATE OF BIRTH</label><br>
 
-<select name="Birthday&nbsp;day" id="birthdayDay">
-<option value="-1">Day:</option>
+<select name="Birthday&nbsp;day" id="birthdayDay" required>
+<option value="-1" required>Day:</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -146,8 +146,8 @@ frmvalidator.addValidation("message","req",
 <option value="31">31</option>
 </select>
  
-<select name="Birthday&nbsp;Month" id="birthdayMonth">
-<option value="-1">Month:</option>
+<select name="Birthday&nbsp;Month" id="birthdayMonth" required>
+<option value="-1" required>Month:</option>
 <option value="January">Jan</option>
 <option value="February">Feb</option>
 <option value="March">Mar</option>
@@ -162,9 +162,9 @@ frmvalidator.addValidation("message","req",
 <option value="December">Dec</option>
 </select>
  
-<select name="Birthday&nbsp;Year" id="birthdayYear">
+<select name="Birthday&nbsp;Year" id="birthdayYear" required>
  
-<option value="-1">Year:</option>
+<option value="-1" required>Year:</option>
 <option value="2010">2010</option>
 <option value="2009">2009</option>
 <option value="2008">2008</option>
@@ -264,14 +264,14 @@ Female <input type="radio" name="Gender" value="Female" class="form-control" id=
  
 <!----- Course ---------------------------------------------------------->
 <tr>
-<td><label for="course" name="Course" class="form-label">SELECT COURSES</label><br>
+<td><label for="course" name="Course(s)" class="form-label" required>SELECT COURSES</label><br>
 
     Data Analytics
-    <input type="checkbox" name="Course" value="Data Analytics" class="form-control" id="course" required>
+    <input type="checkbox" name="Course&nbsp;1" value="Data Analytics" class="form-control" id="course-1" required>
     Microsoft Excel
-    <input type="checkbox" name="Course" value="Microsoft Excel">
+    <input type="checkbox" name="Course&nbsp;2" value="Microsoft Excel" id="course-2">
     Microsoft Powerpoint
-    <input type="checkbox" name="Course" value="Microsoft Powerpoint">
+    <input type="checkbox" name="Course&nbsp;3" value="Microsoft Powerpoint" id="course-3">
     <br />
     </td>
     </tr>
