@@ -1,3 +1,4 @@
+// you can use this for validation or make use of "required" at the end of each input in your html codes
 var frmvalidator  = new frmvalidator("registrationform");
 frmvalidator.addValidation("firstName","req","Please provide your First Name");
 frmvalidator.addValidation("lastName","req","Please provide your Last Name");
@@ -20,5 +21,5 @@ frmvalidator.addValidation("message","req",
 
   // reset the form after submit
   function resetForm() {
-  document.getElementById("enermicsForm").reset();
+  document.getElementById("eForm").reset();
   }
