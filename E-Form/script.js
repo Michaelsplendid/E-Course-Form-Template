@@ -16,7 +16,7 @@ frmvalidator.addValidation("message","req",
 
   // alert after submit
   function myFunction() {
-    alert("Your Form is Successfully Submitted! \n Click On Okay To Continue To Payment Section.");
+    alert("This is a form success alert I built with JavaScript! \n Go back to your html ans js codes \n Edit the form action section, redirectory section in your HTML codes, and alert section in the js codes .");
   }
 
   // reset the form after submit
